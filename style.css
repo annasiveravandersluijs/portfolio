@@ -86,13 +86,18 @@ nav div#thesis{
 }
 
 nav div#astro{
-	top:20%;
-	left:30%;
+	top:15%;
+	left:45%;
+}
+
+nav div#ai{
+	top:15%;
+	left:58%;
 }
 
 nav div#link{
-	top:15%;
-	left:50%;
+	top:20%;
+	left:30%;
 }
 
 nav div img{
