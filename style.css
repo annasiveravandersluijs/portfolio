@@ -60,6 +60,11 @@ nav div{
 	transform: translateX(-50%);
 }
 
+nav div#art{
+	top:38%;
+	left:22%;
+}
+
 nav div#time{
 	top:60%;
 	left:40%;
@@ -88,6 +93,11 @@ nav div#thesis{
 nav div#astro{
 	top:15%;
 	left:45%;
+}
+
+nav div#dark{
+	top:38%;
+	left:78%;
 }
 
 nav div#ai{
