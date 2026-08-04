@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* ('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Nunito:wght@500&display=swap'); */
 /*'Nunito', sans-serif*/
 
 body, html{
@@ -9,6 +10,14 @@ body, html{
 	color: white;
 	text-decoration: none;
 /*	overflow: hidden;*/
+}
+
+html{
+	background-image: url("touchgrass.jpg");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 body{
@@ -28,11 +37,14 @@ div#content{
 }
 
 h1, h2, h3{
-	font-family: 'Cherry Bomb One', cursive;
+	font-family: "Courier Prime", monospace;
+ 	font-weight: 700;
+	/* font-family: 'Cherry Bomb One', cursive; */
 }
 
 h1{
-	font-size: 2.2em;
+	font-size: 2em;
+	visibility: hidden;
 }
 
 strong, b, i{
@@ -66,7 +78,7 @@ nav div#art{
 }
 
 nav div#time{
-	top:60%;
+	top:68%;
 	left:40%;
 }
 
@@ -76,7 +88,7 @@ nav div#dream{
 }
 
 nav div#bat{
-	top:60%;
+	top:68%;
 	left:60%;
 }
 
@@ -161,12 +173,12 @@ section iframe{
 }
 
 @media only screen and (max-width: 850px){
-body{
-	background-size: 100% 100%;
-}
+	body{
+		background-size: 100% 100%;
+	}
 
-.grid {
-	column-count: 1s;
-	column-gap: 10px;
-}
+	.grid {
+		column-count: 1s;
+		column-gap: 10px;
+	}
 }
