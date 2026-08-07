@@ -1,3 +1,6 @@
+let flashElement
+const gifDuration = 60;
+
 function show(iconElement){
 	let elementId = iconElement.id;
 	let tabElement = document.getElementById(elementId + "tab")
@@ -14,6 +17,17 @@ function link(){
 	window.open('https://www.linkedin.com/in/anna-sivera-van-der-sluijs/');
 }
 
+function playAnimation(){
+	flashElement.src = "flash.gif?t=" + new Date().getTime();
+	flashElement.style.display = "block";
+}
+
+setTimeout(() => {
+        flashElement.style.display = "none";
+    }, gifDuration);
+
+const randomDelay = (Math.random() * 5000) + 2000;
+setTimeout(playAnimation, randomDelay);
 
 window.onload=function(){
 
@@ -32,4 +46,8 @@ window.onload=function(){
 	document.getElementById("link").onclick=function(){
 		link(this);
 	}
+
+	flashElement = document.getElementById("effect");
+	flashElement.style.display = "none";
+	playAnimation();
 }
