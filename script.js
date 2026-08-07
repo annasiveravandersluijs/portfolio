@@ -1,5 +1,4 @@
 let flashElement
-const gifDuration = 60;
 
 function show(iconElement){
 	let elementId = iconElement.id;
@@ -20,14 +19,14 @@ function link(){
 function playAnimation(){
 	flashElement.src = "flash.gif?t=" + new Date().getTime();
 	flashElement.style.display = "block";
+
+	scheduleNextFlash();
 }
 
-setTimeout(() => {
-        flashElement.style.display = "none";
-    }, gifDuration);
-
-const randomDelay = (Math.random() * 5000) + 2000;
-setTimeout(playAnimation, randomDelay);
+function scheduleNextFlash(){
+	const randomDelay = (Math.random() * 40000) + 20000;
+	setTimeout(playAnimation, randomDelay);
+}
 
 window.onload=function(){
 
@@ -48,6 +47,5 @@ window.onload=function(){
 	}
 
 	flashElement = document.getElementById("effect");
-	flashElement.style.display = "none";
 	playAnimation();
 }

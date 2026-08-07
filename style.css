@@ -175,8 +175,10 @@ img#effect{
 	height: 100%;
 	top: 50%;
 	left: 50%;
+	display: none;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	pointer-events: none;
 }
 
 @media only screen and (max-width: 850px){
